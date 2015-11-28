@@ -8,7 +8,7 @@ body { background-color: #fff; padding: 20px; }
    position: relative;
    overflow: hidden;
    color: #fff;
-   background: #000 url(.../images/background.jpg) no-repeat 0px 0px;
+   background: #000 url(../images/background.jpg) no-repeat 0px 0px;
 }
 
 #myQuiz h2 {font-size: 3em; margin: 0px; font-weight: 100;}
@@ -25,5 +25,8 @@ body { background-color: #fff; padding: 20px; }
 }
 
 /* Intro */
-#myQuiz  .intro { position: absolute; top: 225px; left: 40px; width: 550px;}
+#myQuiz  .intro { position: absolute; top: 225px; left: 670px; width: 550px;}
 #myQuiz .intro p { margin: 0px 0px 40px 0px; }
+
+/* Questions */
+#myQuiz .question { width: 550px; position: absolute; top: 225px; left: 40px;}
