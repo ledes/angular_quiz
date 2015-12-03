@@ -4,6 +4,7 @@ Mini project using AngularJS in order to create, score, and share results from a
 
 ![Gif](http://cdn.makeagif.com/media/12-03-2015/rF4XCN.gif)
 
+![Gif](http://cdn.makeagif.com/media/12-03-2015/deozIY.gif)
 
 Step-by-step:
 
