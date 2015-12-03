@@ -28,6 +28,7 @@
 				}
 				$scope.myQuestions[qIndex].questionState = 'answered';
 			}
+			$scope.percentage = (($scope.score / $scope.totalQuestions)*100).toFixed(2);
 		}
 		$scope.isSelected = function(qIndex, aIndex){
 			return 	$scope.myQuestions[qIndex].selectedAnswer === aIndex;
@@ -38,8 +39,13 @@
 		$scope.selectContinue = function(){
 			return $scope.activeQuestion += 1;
 		}
+		$scope.createSharelinks = function(percentage){
+			var url = 'http://www.google.com';
+			var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+'% on this quizz about Saturn. Try to beat my score at '+url+'">Email a friend</a>';
+			var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+'% on this quizz about Saturn. Try to beat my score at&amp;hastags=SaturnQuiz&url='+url+'">Tweet your score</a>';
+			var newMarkup = emailLink + twitterLink;
 
-
+			return $sce.trustAsHtml(newMarkup);
+		}
 	}]);
-
 })();
