@@ -1,6 +1,7 @@
 # Creating a Quiz with AngularJS
 
 Mini project using AngularJS in order to create, score, and share results from an interactive quiz.
+
 ![Gif](http://cdn.makeagif.com/media/12-03-2015/deozIY.gif)
 
 ![Gif](http://cdn.makeagif.com/media/12-03-2015/rF4XCN.gif)
